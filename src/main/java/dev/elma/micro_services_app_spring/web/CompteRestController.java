@@ -21,6 +21,7 @@ public class CompteRestController {
     }
     @PostMapping("/newClientCompte")
     Compte newClientCompte(@RequestBody Compte compte ){
+        System.out.println(compte);
         compte.setId(UUID.randomUUID().toString());
         return compteRepository.save(compte);
     }
