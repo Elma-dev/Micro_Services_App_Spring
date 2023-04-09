@@ -7,6 +7,8 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import java.util.UUID;
+
 @SpringBootApplication
 public class MicroServicesAppSpringApplication implements CommandLineRunner {
 	@Autowired
@@ -18,11 +20,10 @@ public class MicroServicesAppSpringApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		for (int i = 0; i < 10; i++) {
-			new Compte()
+			Compte compte = Compte.builder()
+					.id(UUID.randomUUID().toString()).solde(1000+Math.random()*1000).password("comp12"+i)
+					.build();
+			compteRepository.save(compte);
 		}
-		compteRepository.save(new Compte(null,"Abdeljalil","1234",12200));
-		compteRepository.save(new Compte(null,"Abdeljalil2","1432",10000));
-		compteRepository.save(new Compte(null,"Abdeljalil3","1243",50000));
-		compteRepository.save(new Compte(null,"Abdeljalil4","1324",2000));
 	}
 }

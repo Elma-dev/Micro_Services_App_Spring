@@ -16,7 +16,6 @@ import lombok.NoArgsConstructor;
 public class Compte {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String id;
-    private String name;
     private String password;
     private double solde;
 }
