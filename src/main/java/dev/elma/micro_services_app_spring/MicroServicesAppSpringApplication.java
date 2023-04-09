@@ -1,7 +1,7 @@
 package dev.elma.micro_services_app_spring;
 
-import dev.elma.micro_services_app_spring.Dao.CompteRepository;
-import dev.elma.micro_services_app_spring.Entities.Compte;
+import dev.elma.micro_services_app_spring.dao.CompteRepository;
+import dev.elma.micro_services_app_spring.entities.Compte;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
