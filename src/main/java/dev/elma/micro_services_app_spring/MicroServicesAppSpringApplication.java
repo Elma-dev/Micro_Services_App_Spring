@@ -17,6 +17,9 @@ public class MicroServicesAppSpringApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
+		for (int i = 0; i < 10; i++) {
+			new Compte()
+		}
 		compteRepository.save(new Compte(null,"Abdeljalil","1234",12200));
 		compteRepository.save(new Compte(null,"Abdeljalil2","1432",10000));
 		compteRepository.save(new Compte(null,"Abdeljalil3","1243",50000));
