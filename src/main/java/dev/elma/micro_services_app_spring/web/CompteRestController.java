@@ -35,6 +35,11 @@ public class CompteRestController {
             cmpt.setSolde(compte.getSolde());
         }
         return compteRepository.save(cmpt);
-
+    }
+    @DeleteMapping("/deleteCompte/{id}")
+    Compte deleteCompte(@PathVariable String id){
+        Compte compte=compteRepository.findById(id).orElseThrow();
+        compteRepository.delete(compte);
+        return compte;
     }
 }
