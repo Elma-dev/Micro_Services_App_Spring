@@ -14,7 +14,7 @@ import lombok.NoArgsConstructor;
 
 @Entity
 public class Compte {
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id
     private String id;
     private String password;
     private double solde;
