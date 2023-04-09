@@ -25,4 +25,16 @@ public class CompteRestController {
         compte.setId(UUID.randomUUID().toString());
         return compteRepository.save(compte);
     }
+    @PutMapping("/updateCompte/{id}")
+    Compte updateCompte(@PathVariable String id,@RequestBody Compte compte){
+        Compte cmpt=compteRepository.findById(id).orElseThrow();
+        if(!compte.getPassword().isEmpty()){
+            cmpt.setPassword(compte.getPassword());
+        }
+        if(compte.getSolde()!=0){
+            cmpt.setSolde(compte.getSolde());
+        }
+        return compteRepository.save(cmpt);
+
+    }
 }
