@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.UUID;
 
 @RestController
+@RequestMapping("/api")
 public class CompteRestController {
     CompteRepository compteRepository;
     public CompteRestController(CompteRepository compteRepository){
