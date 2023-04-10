@@ -7,4 +7,5 @@ import org.springframework.stereotype.Repository;
 
 @RepositoryRestResource
 public interface CompteRepository extends JpaRepository<Compte,String> {
+
 }
