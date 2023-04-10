@@ -94,3 +94,11 @@ build a crude application to handle bank accounts using the following concepts:
 </tr>
 </table>
 
+**6. Documentation of RestAPI with Swagger**
+
+<table>
+          <td width="100%">
+                    <h3 align="center">Swagger Documentation</h3>
+                    <img src="img/swagger.jpg"></img>
+          </td>
+</table>
