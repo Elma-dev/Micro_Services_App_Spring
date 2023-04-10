@@ -115,3 +115,21 @@ Spring Data could create web services rest linked with jpa repository just we ne
                     </td>
           <tr>
 </table>
+
+**8. Projection**
+
+You can utilize Projection in the request while using Spring Data Rest. and in order to do this:
+
+* Create **Interface** Projection
+* **@Projection(type={x.class},name="nameProjection")** add this notaion to this interface
+
+<table>
+          <tr>
+                    <td>
+                              <h3 align="center">Example</h3>
+                              <img src="img/project.png"></img>
+                    </td>
+          </tr>
+</table>
+
+**9. Create DTOS/Mappers**
