@@ -60,3 +60,37 @@ build a crude application to handle bank accounts using the following concepts:
         </td>
 </tr>
 </table>
+
+**5. Test services with Postman**
+
+<table>
+<tr>
+<td width="50%">
+          <h3 align="center">Get All</h3>
+          <p align="center">
+             <img src="img/findAll.jpg" alt="project example"/>
+            </p>
+  </td>
+  <td width="50%">
+          <h3 align="center">Add new</h3>
+          <p align="center">
+             <img src="img/createCompte.jpg" alt="project example"/>
+            </p>
+        </td>
+</tr>
+<tr>
+<td width="50%">
+          <h3 align="center">Update</h3>
+          <p align="center">
+             <img src="img/update.jpg" alt="project example"/>
+            </p>
+  </td>
+  <td width="50%">
+          <h3 align="center">Delete</h3>
+          <p align="center">
+             <img src="img/delete.jpg" alt="project example"/>
+            </p>
+        </td>
+</tr>
+</table>
+
