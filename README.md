@@ -102,3 +102,16 @@ build a crude application to handle bank accounts using the following concepts:
                     <img src="img/swagger.jpg"></img>
           </td>
 </table>
+
+**7. Using Spring Data Rest**
+
+Spring Data could create web services rest linked with jpa repository just we need to add **@RepositoryRestResources** to RepositoryClass.
+
+<table>
+          <tr>
+                    <td>
+                    <h3 align="center">Swagger Documentation for Spring Data Rest</h3>
+                    <img src="img/swaggerSpring.jpg"></img>
+                    </td>
+          <tr>
+</table>
