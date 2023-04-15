@@ -21,7 +21,7 @@ public class MicroServicesAppSpringApplication implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 		for (int i = 0; i < 10; i++) {
 			Compte compte = Compte.builder()
-					.id(UUID.randomUUID().toString()).solde(1000+Math.random()*1000).password("comp12"+i)
+					.id(UUID.randomUUID().toString()).solde((1000+Math.random())*1000).password("comp12"+i)
 					.build();
 			compteRepository.save(compte);
 		}

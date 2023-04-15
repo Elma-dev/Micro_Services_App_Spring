@@ -7,6 +7,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Date;
+
 
 @Data @AllArgsConstructor @NoArgsConstructor @Builder
 
@@ -14,6 +16,7 @@ import lombok.NoArgsConstructor;
 public class Compte {
     @Id
     private String id;
+    private Date creationDate;
     private String password;
     private double solde;
 }
