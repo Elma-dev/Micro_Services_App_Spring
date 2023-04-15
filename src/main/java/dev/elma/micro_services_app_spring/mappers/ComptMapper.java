@@ -4,11 +4,13 @@ import dev.elma.micro_services_app_spring.dtos.CompteDTORequest;
 import dev.elma.micro_services_app_spring.dtos.CompteDTOResponse;
 import dev.elma.micro_services_app_spring.entities.Compte;
 import org.springframework.beans.BeanUtils;
+import org.springframework.stereotype.Component;
 
 
 import java.util.Date;
 import java.util.UUID;
 
+@Component
 public class ComptMapper {
     public Compte dtoCompteToCompte(CompteDTORequest compteDTORequest){
         Compte compte=Compte.builder()

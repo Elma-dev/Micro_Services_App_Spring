@@ -17,10 +17,14 @@ import java.util.UUID;
 
 @RestController
 @RequestMapping("/apiServices")
-@NoArgsConstructor @AllArgsConstructor @Data @Builder
 public class CompteRestControllerWithServices {
-    CompteRepository compteRepository;
-    BankServices bankServices;
+    private CompteRepository compteRepository;
+    private BankServices bankServices;
+
+    public CompteRestControllerWithServices(CompteRepository compteRepository, BankServices bankServices) {
+        this.compteRepository = compteRepository;
+        this.bankServices = bankServices;
+    }
 
     @GetMapping("/ClientComptes")
     List<Compte> getAllComptes(){

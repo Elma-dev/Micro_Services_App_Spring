@@ -14,7 +14,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 @Service
 @Transactional
-@NoArgsConstructor @AllArgsConstructor @Data @Builder
+@AllArgsConstructor @Data @Builder
 public class BankServices implements IBankServices{
     private CompteRepository compteRepository;
     private ComptMapper comptMapper;
