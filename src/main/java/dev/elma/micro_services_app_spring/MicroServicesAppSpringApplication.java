@@ -7,6 +7,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import java.util.Date;
 import java.util.UUID;
 
 @SpringBootApplication
@@ -22,6 +23,7 @@ public class MicroServicesAppSpringApplication implements CommandLineRunner {
 		for (int i = 0; i < 10; i++) {
 			Compte compte = Compte.builder()
 					.id(UUID.randomUUID().toString()).solde((1000+Math.random())*1000).password("comp12"+i)
+					.creationDate(new Date())
 					.build();
 			compteRepository.save(compte);
 		}
