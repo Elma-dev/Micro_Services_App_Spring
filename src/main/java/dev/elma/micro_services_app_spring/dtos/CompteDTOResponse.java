@@ -7,10 +7,7 @@ import lombok.NoArgsConstructor;
 
 import java.util.Date;
 
-@NoArgsConstructor
-@AllArgsConstructor
-@Data
-@Builder
+@NoArgsConstructor  @AllArgsConstructor @Data @Builder
 public class CompteDTOResponse {
     private Date creationDate;
     private String password;
