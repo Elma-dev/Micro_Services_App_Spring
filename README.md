@@ -1,4 +1,4 @@
-# Micro_Services_App_Spring
+# Micro_Services_App_Spring Rest/GraphQL/GRPC
 ### In this repository:
 build a crude application to handle bank accounts using the following concepts:
 * Spring Data JPA
@@ -7,7 +7,7 @@ build a crude application to handle bank accounts using the following concepts:
 * GRPC
 * H2 DataBase
 
-**1. Create JPA Account**
+## **1. Create JPA Account**
 <table>
 <tr>
 <td width="100%">
@@ -19,7 +19,7 @@ build a crude application to handle bank accounts using the following concepts:
 </tr>
 </table>
 
-**2. Create CompteRepository**
+## **2. Create CompteRepository**
 <table>
 <tr>
 <td width="100%">
@@ -31,7 +31,7 @@ build a crude application to handle bank accounts using the following concepts:
 </tr>
 </table>
 
-**3. DAO Test**
+## **3. DAO Test**
 <table>
 <tr>
 <td width="50%">
@@ -49,7 +49,7 @@ build a crude application to handle bank accounts using the following concepts:
 </tr>
 </table>
 
-**4. Web service Restfull**
+## **4. Web service Restfull**
 <table>
 <tr>
 <td width="100%">
@@ -61,7 +61,7 @@ build a crude application to handle bank accounts using the following concepts:
 </tr>
 </table>
 
-**5. Test services with Postman**
+## **5. Test services with Postman**
 
 <table>
 <tr>
@@ -94,7 +94,7 @@ build a crude application to handle bank accounts using the following concepts:
 </tr>
 </table>
 
-**6. Documentation of RestAPI with Swagger**
+## **6. Documentation of RestAPI with Swagger**
 
 <table>
           <td width="100%">
@@ -103,7 +103,7 @@ build a crude application to handle bank accounts using the following concepts:
           </td>
 </table>
 
-**7. Using Spring Data Rest**
+## **7. Using Spring Data Rest**
 
 Spring Data could create web services rest linked with jpa repository just we need to add **@RepositoryRestResources** to RepositoryClass.
 
@@ -116,7 +116,7 @@ Spring Data could create web services rest linked with jpa repository just we ne
           <tr>
 </table>
 
-**8. Projection**
+## **8. Projection**
 
 You can utilize Projection in the request while using Spring Data Rest. and in order to do this:
 
@@ -132,4 +132,41 @@ You can utilize Projection in the request while using Spring Data Rest. and in o
           </tr>
 </table>
 
-**9. Create DTOS/Mappers**
+## **9. Create DTOS/Mappers**
+<table>
+          <tr>
+                    <h2 align="center">DTOs</h2>
+                    <td width="50%">
+                              <h3 align="center">DTOs Request</h3>
+                              <img src="img/dtoReq.jpg"></img>
+                    </td>
+                    <td width="50%">
+                              <h3 align="center">DTOs Response</h3>
+                              <img src="img/dtoResp.jpg"></img>
+                    </td>
+          </tr>
+</table>
+<table>
+           <tr>
+                    <h2 align="center">Mappers</h2>
+                    <td width="100%">
+                              <img src="img/mappers.jpg"></img>
+                    </td>
+          </tr>
+</table>
+
+## **10. Services Layer**
+<table>
+           <tr>
+                    <td >
+                    <h2 align="center">Interface Bank Services</h2>
+                    <img src="img/IBank.jpg"></img>
+                    </td>
+          </tr
+           <tr>
+                    <td>
+                              <h2 align="center">Bank Services Class</h2>
+                              <img src="img/bank.jpg"></img>
+                    </td>
+          </tr>
+</table>
