@@ -20,7 +20,7 @@ public class CompteGraphQLController {
     public List<Compte> comptes(){
         return compteRepository.findAll();
     }
-    @QueryMapping
+    @QueryMapping()
     public Compte compte(@Argument String id){
         return compteRepository.findById(id).get();
     }

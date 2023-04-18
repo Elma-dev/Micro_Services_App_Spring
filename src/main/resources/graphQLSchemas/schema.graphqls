@@ -1,0 +1,10 @@
+type Query{
+    comptes:[Compte]
+}
+
+type Compte{
+    id:String,
+    creationDate:String,
+    password:String,
+    solde:Float
+}
