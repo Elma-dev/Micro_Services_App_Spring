@@ -1,6 +1,12 @@
 type Query{
-    comptes:[Compte]
+    comptes:[Compte],
+    compte(id:String):Compte
 }
+
+type Mutation{
+    deleteCompte(id:String):Compte
+}
+
 
 type Compte{
     id:String,

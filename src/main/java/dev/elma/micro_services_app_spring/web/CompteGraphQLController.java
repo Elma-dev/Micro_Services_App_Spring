@@ -6,6 +6,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import org.springframework.graphql.data.method.annotation.Argument;
 import org.springframework.graphql.data.method.annotation.Arguments;
+import org.springframework.graphql.data.method.annotation.MutationMapping;
 import org.springframework.graphql.data.method.annotation.QueryMapping;
 import org.springframework.stereotype.Controller;
 
@@ -23,6 +24,13 @@ public class CompteGraphQLController {
     @QueryMapping()
     public Compte compte(@Argument String id){
         return compteRepository.findById(id).get();
+    }
+
+    @MutationMapping
+    public Compte deleteCompte(@Argument String id){
+        Compte compte = compteRepository.findById(id).get();
+        compteRepository.deleteById(id);
+        return compte;
     }
 
 
